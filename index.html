@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart OS Resource Abuse Detector</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Smart OS Resource Abuse Detector</h1>
+            <p>Real-Time System Monitoring Dashboard</p>
+        </header>
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>CPU Usage</h3>
+                <div class="value" id="cpuValue">0%</div>
+            </div>
+
+            <div class="card">
+                <h3>Memory Usage</h3>
+                <div class="value" id="memoryValue">0%</div>
+            </div>
+
+            <div class="card">
+                <h3>System Status</h3>
+                <div class="status healthy" id="systemStatus">
+                    Healthy
+                </div>
+            </div>
+
+        </section>
+
+        <section class="chart-section">
+
+            <div class="chart-card">
+                <h2>CPU Usage History</h2>
+                <canvas id="cpuChart"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <h2>Memory Usage History</h2>
+                <canvas id="memoryChart"></canvas>
+            </div>
+
+        </section>
+
+        <section class="alerts-section">
+
+            <div class="alert-card">
+                <h2>Resource Alerts</h2>
+
+                <ul id="alertsList">
+                    <li>No alerts detected.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="recommendation-section">
+
+            <div class="recommendation-card">
+                <h2>Optimization Suggestions</h2>
+
+                <ul id="suggestionsList">
+                    <li>System operating normally.</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
